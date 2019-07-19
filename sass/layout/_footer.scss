@@ -1,0 +1,85 @@
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  color: white;
+  background-color: rgb(27, 27, 27);
+  padding: 4rem 6rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 500px) {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+  &__tile {
+    margin: 2rem 3rem;
+    padding: 2rem;
+  }
+
+  &__t1 {
+    h2 {
+      font-size: 3rem;
+    }
+    img {
+      height: 10rem;
+      width: auto;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__t2 {
+    &-text {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__t3 {
+    &-content {
+      margin-top: 3rem;
+
+      i {
+        color: white;
+      }
+    }
+  }
+
+  &__t4 {
+    button {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      padding: .8rem;
+    }
+    input {
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+    ul {
+      display: flex;
+      margin-top: 2.5rem;
+    }
+    li {
+      margin: 0 2.5rem 0 0;
+      list-style: none;
+    }
+    a {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+}

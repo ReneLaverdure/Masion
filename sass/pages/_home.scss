@@ -1,0 +1,85 @@
+.header {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  background-image: url("../img/hero.jpeg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   &__text {
+    padding: 4rem;
+    margin: 6rem;
+    margin-top: 15%;
+    margin-right: 50%;
+    background-color: aliceblue;
+    animation: moveInBottom 0.6s ease-out .1s;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 20%;
+      margin-right: 30%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 10;
+    margin-right: 10%;
+}
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 5.5rem;
+      letter-spacing: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+   }
+}
+
+
+.banner {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  background-color: aliceblue;
+  justify-items: center;
+  align-items: center;
+
+
+  &__text {
+    text-align: center;
+    overflow: auto;
+    
+    width: 60%;
+    margin: 5% auto;
+    margin-bottom: 5%;
+    padding: 3rem;
+
+    h2 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 1.5rem;
+    }
+
+
+  }
+}
+
+
+
+.tiles {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  // background-color: aliceblue;
+  // height: 100vh;
+}
+
+
+
+
+
